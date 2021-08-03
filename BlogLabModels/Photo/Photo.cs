@@ -8,7 +8,7 @@ namespace BlogLabModels.Photo
     {
         public int PhotoId { get; set; }
 
-        public int ApplicatioUserId { get; set; }
+        public int ApplicationUserId { get; set; }
 
         public DateTime PublishDate { get; set; }
 

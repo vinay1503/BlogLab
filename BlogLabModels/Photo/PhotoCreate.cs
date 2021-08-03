@@ -6,7 +6,7 @@ namespace BlogLabModels.Photo
 {
     public class PhotoCreate
     {
-        public string ImageURl { get; set; }
+        public string ImageUrl { get; set; }
 
         public string PublicId { get; set; }
 

@@ -8,11 +8,11 @@ namespace BlogLab.Repository
 {
     public interface IPhotoRepository
     {
-        public Task<Photo> InsertAsync(PhotoCreate photoCreate, int appicationUserId);
+        public Task<Photo> InsertAsync(PhotoCreate photoCreate, int AppicationUserId);
 
         public Task<Photo> GetAsync(int photoId);
 
-        public Task<List<Photo>> GetAllByUserAsync(int applicationUserId);
+        public Task<List<Photo>> GetAllByUserIdAsync(int ApplicationUserId);
 
         public Task<int> DeleteAsync(int photoId);
     }
