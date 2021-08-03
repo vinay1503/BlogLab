@@ -81,7 +81,7 @@ namespace BlogLab.Web.Controllers
 
             if (foundPhoto != null)
             {
-                if (foundPhoto.ApplicatioUserId == applicationUserId)
+                if (foundPhoto.ApplicationUserId == applicationUserId)
                 {
                     var blogs = await _blogRepository.GetAllByUserIdAsync(applicationUserId);
 
