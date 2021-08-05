@@ -15,7 +15,7 @@ namespace BlogLab.Repository
     public class AccountRepository : IAccountRepository
     {
         private readonly IConfiguration _config;
-        
+
         public AccountRepository(IConfiguration config)
         {
             _config = config;
@@ -47,7 +47,7 @@ namespace BlogLab.Repository
                 await connection.OpenAsync(cancellationToken);
 
                 await connection.ExecuteAsync("Account_Insert",
-                    new { Account = dataTable.AsTableValuedParameter("dbo.AccountType")}, commandType: CommandType.StoredProcedure);
+                    new { Account = dataTable.AsTableValuedParameter("dbo.AccountType") }, commandType: CommandType.StoredProcedure);
             }
 
             return IdentityResult.Success;
@@ -64,7 +64,7 @@ namespace BlogLab.Repository
                 await connection.OpenAsync(cancellationToken);
 
                 applicationUser = await connection.QuerySingleOrDefaultAsync<ApplicationUserIdentity>(
-                    "Account_GetByUsername", new { normalizedUsername = normalizedUsername },
+                    "Account_GetByUsername", new { NormalizedUsername = normalizedUsername },
                     commandType: CommandType.StoredProcedure
                     );
             }

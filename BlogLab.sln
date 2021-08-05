@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Web", "BlogLab.Web\BlogLab.Web.csproj", "{C62BE3AE-0E37-4F20-8029-3675E4DB7C9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLabModels", "BlogLabModels\BlogLabModels.csproj", "{BFA2F233-609F-48CC-B575-F26C53015A9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Models", "BlogLabModels\BlogLab.Models.csproj", "{BFA2F233-609F-48CC-B575-F26C53015A9C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogLab.Repository", "BlogLab.Repository\BlogLab.Repository.csproj", "{393CD88C-5862-47F6-BA60-E228A2A2080F}"
 EndProject

@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogLab.Repository\BlogLab.Repository.csproj" />
-    <ProjectReference Include="..\BlogLabModels\BlogLabModels.csproj" />
+    <ProjectReference Include="..\BlogLabModels\BlogLab.Models.csproj" />
   </ItemGroup>
 
 </Project>

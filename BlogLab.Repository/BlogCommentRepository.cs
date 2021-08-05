@@ -81,7 +81,7 @@ namespace BlogLab.Repository
 
             dataTable.Rows.Add(
                 blogCommentCreate.BlogCommentId,
-                //blogCommentCreate.ParentBlogCommentId,
+                blogCommentCreate.ParentBlogCommentId,
                 blogCommentCreate.BlogId,
                 blogCommentCreate.Content);
 
@@ -108,5 +108,4 @@ namespace BlogLab.Repository
             return blogComment;
         }
     }
-
 }

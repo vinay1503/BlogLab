@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlogLabModels.Photo;
 using BlogLab.Repository;
 using BlogLab.Services;
-using BlogLabModels.Photo;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -93,7 +93,7 @@ namespace BlogLab.Web.Controllers
 
                     if (deleteResult.Error != null) return BadRequest(deleteResult.Error.Message);
 
-                    var affectedRows = await _photoRepository.DeleteAsync(foundPhoto.PhotoId);
+                    var affectedRows = await _photoRepository.DeletetAsync(foundPhoto.PhotoId);
 
                     return Ok(affectedRows);
                 }
