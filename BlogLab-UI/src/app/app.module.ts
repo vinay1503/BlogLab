@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SummaryPipe } from './pipes/summary.pipe';
-import { BlogComponent } from './blog-components/blog/blog.component';
 import { BlogCardComponent } from './components/blog-components/blog-card/blog-card.component';
 import { BlogEditComponent } from './components/blog-components/blog-edit/blog-edit.component';
 import { BlogsComponent } from './components/blog-components/blogs/blogs.component';
@@ -20,6 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PhotoAlbumComponent } from './components/photo-album/photo-album.component';
 import { RegisterComponent } from './components/register/register.component';
+import { BlogComponent } from './components/blog-components/blog/blog.component';
 
 @NgModule({
   declarations: [
